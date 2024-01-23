@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@import "../../assets/fonts/stylesheet.css";
+/* Mixins */
+/* CLASES DE COLORES DE TEXTO */
+.text-orange {
+  color: #C66B0F;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-green {
+  color: #91C68D;
+}
+
+.text-gray-1 {
+  color: #E2DDD9;
+}
+
+.text-gray-2 {
+  color: #747274;
+}
+
+/* CLASES DE COLORES DE BACKGROUND */
+.background-orange {
+  background-color: #C66B0F;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+.background-green {
+  background-color: #91C68D;
+}
+
+.background-gray-1 {
+  background-color: #E2DDD9;
+}
+
+.background-gray-2 {
+  background-color: #747274;
+}
+
+/* Fuentes */
+.font-roboto-cond {
+  font-family: "Roboto Condensed", Lato, Arial, sans-serif;
+}
+
+.font-roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.font-marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.font-work {
+  font-family: "Work Sans", sans-serif;
+}
+
+/*ESTILOS HEADER*/
+#header nav {
+  height: 102px;
+  width: 100%;
+}
+
+.nav-link {
+  color: #747274 !important;
+}
+.nav-link:hover {
+  color: #C66B0F !important;
+}
+
+.navbar-nav .active > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+.navbar-nav__navbar-brand--icon {
+  max-width: 150px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .navbar-nav__navbar-brand--icon {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+/*FIN ESTILOS HEADER*/
+/*ESTILOS SECCIÓN PERFIL PAGE INDEX.HTML*/
+.container__image-profile {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__image-profile--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*ANIMACIÓN TEXTO*/
+@keyframes typing {
+  from {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 100%;
+    padding-left: inherit;
+    padding-right: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+}
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 4s steps(20) forwards;
+  text-align: center; /* Agregamos el estilo para centrar el texto */
+}
+
+/* FIN ESTILOS SECTION PERFIL PAGE INDEX.HTML*/
+/*ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
+.carousel-item .container {
+  width: 60%;
+  /* Ancho del contenedor */
+  height: 400px;
+  /* Altura del contenedor */
+  overflow: hidden;
+  /* Oculta cualquier contenido que desborde del contenedor */
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .carousel-item .container {
+    width: 30%;
+    /* Ancho del contenedor */
+  }
+}
+.carousel-item .container img {
+  width: 100%;
+  /* Ancho de la imagen */
+  height: 100%;
+  /* Altura de la imagen */
+  object-fit: contain;
+  /* Ajusta la imagen al contenedor */
+}
+
+.carousel-indicators li {
+  color: transparent;
+  /*se quita la numeración de las slides*/
+}
+
+.container-hv {
+  max-width: 920px;
+  margin: auto;
+}
+
+.fs-7 {
+  font-size: 14px !important;
+}
+
+/* FIN ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
+/*ESTILOS  PAGE PROFILE.HTML*/
+.container__icons-profile img {
+  max-width: 100px;
+  width: 100%;
+  margin: 2rem;
+}
+.container__icons-profile img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esto asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana. */
+}
+
+main {
+  flex: 1; /* El contenido principal se expande para llenar el espacio restante. */
+}
+
+footer {
+  margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+  background-color: #333; /* Ajusta el color de fondo según tus necesidades */
+  color: white; /* Ajusta el color de texto según tus necesidades */
+  padding: 10px;
+  text-align: center;
+}
+
+/*FIN ESTILOS  PAGE PROFILE.HTML*/
+
+/*# sourceMappingURL=style.css.map */

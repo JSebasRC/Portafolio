@@ -1,0 +1,5 @@
+# Ignorar archivos Sass
+# /scss/
+
+# Ignorar archivos JSON
+*.json

@@ -1,0 +1,38 @@
+@import '../base/variable';
+
+/*ESTILOS HEADER*/
+#header {
+  nav {
+    height: 102px;
+    width: 100%;
+  }
+}
+
+.nav-link {
+  color: $gray-2 !important;
+
+  &:hover {
+    color: $orange !important;
+  }
+}
+
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+
+  &__navbar-brand--icon {
+    max-width: 150px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+}
+
+/*FIN ESTILOS HEADER*/
